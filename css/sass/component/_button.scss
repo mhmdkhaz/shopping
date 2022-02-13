@@ -1,0 +1,13 @@
+.btn-black{
+    background-color: transparent;
+    font-size: $fontsize;
+    padding: $paddingelement;
+    @include radius;
+    text-transform: capitalize;
+    border: 3px solid $colorbalck;
+    transition: $transition;
+    &:hover{
+        background-color: $colorbalck;
+        color: $colorpink;
+    }
+}

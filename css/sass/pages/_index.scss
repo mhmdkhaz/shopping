@@ -1,0 +1,161 @@
+header {
+  .img-header {
+    background-image:linear-gradient(to top, rgba(249, 228, 148, 0.5), rgba(249, 228, 148, 0.5)),url(../../../images/headerBcg.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .text {
+      font-size: $fontsize;
+      h1 {
+        @include headsection;
+      }
+    }
+  }
+}
+
+// start in about
+.about {
+  .container {
+    .content-about {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      justify-items: center;
+      margin: $marginsection;
+      @media (max-width: $minmobile) {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      }
+      .text-about {
+        @media (max-width: $minmobile) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        h1 {
+          @include headsection;
+        }
+        p {
+          width: 80%;
+          font-size: 20px;
+          margin: 20px 0 20px 0;
+          @media (max-width: $minmobile) {
+            text-align: center;
+          }
+        }
+      }
+      .img-about {
+        position: relative;
+        width: 80%;
+        @media (max-width: $minmobile) {
+          width: 70%;
+          height: 80%;
+          margin-top: 20px;
+        }
+        &:hover .box {
+          margin-top: 50px;
+          left: 0;
+        }
+        .box {
+          position: absolute;
+          top: 0;
+          left: -20px;
+          background-color: transparent;
+          outline: 10px solid rgb(255, 230, 131);
+          width: 100%;
+          height: 100%;
+          z-index: -2;
+          transition: all 0.4s linear;
+        }
+        img {
+          margin-top: 50px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+// end in about
+
+// start in store
+.store {
+  background-color: $colorgray;
+  margin: $marginsection;
+  .text-store {
+    h1 {
+      @include headsection;
+    }
+  }
+  .buttons-choose {
+    button {
+      margin: $marginelement;
+      font-size: 20px;
+      border: 1px solid $colorbalck;
+    }
+  }
+  .search {
+    form {
+      .input {
+        span {
+          background-color: $colorpink;
+          width: 150px;
+          height: 50%;
+          font-size: 1rem;
+          i {
+            color: $colorbalck;
+          }
+        }
+        input {
+          width: 400px;
+          height: 30px;
+          border: none;
+          @include radius;
+          outline: none;
+        }
+      }
+    }
+  }
+  .box-cake {
+    @for $i from 1 to $counterImages {
+      .content-#{$i} {
+        flex: 0 0 30%;
+        max-width: 30%;
+        margin: $marginelement + 5px;
+        overflow: hidden;
+        @media (max-width: $minmobile) {
+          flex: 0 0 83.333333%;
+          max-width: 83.333333%;
+        }
+        @for $i from 1 to 12 {
+          .cake-#{$i} {
+            overflow: hidden;
+          }
+        }
+        img {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          transition: all 0.3s linear;
+          &:hover {
+            transform: scale(1.1) rotate(2deg);
+          }
+        }
+        @for $i from 1 to $counterImages {
+          .cart-#{$i} {
+            margin: 0;
+            padding: 0;
+            background-color: $colorwhite;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+// end in store

@@ -1,0 +1,13 @@
+@mixin radius {
+    border-radius: 5px;
+}
+
+@mixin headsection {
+    text-align: center;
+    color: $colorbalck;
+    span{
+        color: $colorpink;
+        font-size: $fontsize + 25px;
+    }
+}
+

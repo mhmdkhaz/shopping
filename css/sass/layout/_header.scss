@@ -1,0 +1,53 @@
+nav{
+    background-color: $colorwhite;
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+    .logo{
+        @media (max-width : $minmobile) {
+            width: 100%;
+        }
+    }
+    .nav-element{
+        .active{
+            color: $colorbalck;
+        }
+        ul{
+            list-style: none;
+            li{
+                margin: $marginelement;
+                font-size: 1.5rem;
+                color: $colorpink;
+                transition: $transition;
+                @media (max-width : $minmobile) {
+                    width: 100%;
+                }
+                &:hover{
+                    color: $colorbalck;
+                }
+            }
+        }
+    }
+    .nav-info{
+        @media (max-width : $minmobile) {
+            display: none;
+        }
+        .phone-number{
+            padding: 20px;
+            span{
+                padding: $paddingelement;
+            }
+        }
+        .item{
+            border: 2px solid $colorbalck;
+            @include radius;
+            padding: 5px;
+            transition: $transition;
+            &:hover{
+                background-color: $colorpink;
+                color: $colorwhite;
+                border: 2px solid $colorpink
+            }
+        }
+    }
+}

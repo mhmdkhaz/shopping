@@ -1,0 +1,2594 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.flex-row-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-row-spacearound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-row-spacebetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column-spacearound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column-spacebetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-black {
+  background-color: transparent;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: 3px solid #000;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.btn-black:hover {
+  background-color: #000;
+  color: #ef7998;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  text-transform: capitalize;
+}
+
+nav {
+  background-color: #fff;
+  width: 100%;
+  height: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav .logo {
+    width: 100%;
+  }
+}
+
+nav .nav-element .active {
+  color: #000;
+}
+
+nav .nav-element ul {
+  list-style: none;
+}
+
+nav .nav-element ul li {
+  margin: 10px;
+  font-size: 1.5rem;
+  color: #ef7998;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+@media (max-width: 768px) {
+  nav .nav-element ul li {
+    width: 100%;
+  }
+}
+
+nav .nav-element ul li:hover {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  nav .nav-info {
+    display: none;
+  }
+}
+
+nav .nav-info .phone-number {
+  padding: 20px;
+}
+
+nav .nav-info .phone-number span {
+  padding: 10px;
+}
+
+nav .nav-info .item {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+nav .nav-info .item:hover {
+  background-color: #ef7998;
+  color: #fff;
+  border: 2px solid #ef7998;
+}
+
+header .img-header {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(249, 228, 148, 0.5)), to(rgba(249, 228, 148, 0.5))), url(../../../images/headerBcg.jpeg);
+  background-image: linear-gradient(to top, rgba(249, 228, 148, 0.5), rgba(249, 228, 148, 0.5)), url(../../../images/headerBcg.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+header .img-header .text {
+  font-size: 25px;
+}
+
+header .img-header .text h1 {
+  text-align: center;
+  color: #000;
+}
+
+header .img-header .text h1 span {
+  color: #ef7998;
+  font-size: 50px;
+}
+
+.about .container .content-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  justify-items: center;
+  margin: 50px 0 100px 0;
+}
+
+@media (max-width: 768px) {
+  .about .container .content-about {
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .about .container .content-about .text-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.about .container .content-about .text-about h1 {
+  text-align: center;
+  color: #000;
+}
+
+.about .container .content-about .text-about h1 span {
+  color: #ef7998;
+  font-size: 50px;
+}
+
+.about .container .content-about .text-about p {
+  width: 80%;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+}
+
+@media (max-width: 768px) {
+  .about .container .content-about .text-about p {
+    text-align: center;
+  }
+}
+
+.about .container .content-about .img-about {
+  position: relative;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .about .container .content-about .img-about {
+    width: 70%;
+    height: 80%;
+    margin-top: 20px;
+  }
+}
+
+.about .container .content-about .img-about:hover .box {
+  margin-top: 50px;
+  left: 0;
+}
+
+.about .container .content-about .img-about .box {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background-color: transparent;
+  outline: 10px solid #ffe683;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.about .container .content-about .img-about img {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.store {
+  background-color: #eeeeee;
+  margin: 50px 0 100px 0;
+}
+
+.store .text-store h1 {
+  text-align: center;
+  color: #000;
+}
+
+.store .text-store h1 span {
+  color: #ef7998;
+  font-size: 50px;
+}
+
+.store .buttons-choose button {
+  margin: 10px;
+  font-size: 20px;
+  border: 1px solid #000;
+}
+
+.store .search form .input span {
+  background-color: #ef7998;
+  width: 150px;
+  height: 50%;
+  font-size: 1rem;
+}
+
+.store .search form .input span i {
+  color: #000;
+}
+
+.store .search form .input input {
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.store .box-cake .content-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-1 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-1 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-1 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-1 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-2 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-2 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-2 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-2 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-3 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-3 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-3 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-3 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-4 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-4 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-4 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-4 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-5 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-5 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-5 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-5 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-6 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-6 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-6 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-6 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-7 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-7 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-7 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-7 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-8 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-8 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-8 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-8 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-9 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-9 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-9 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-9 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-10 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-10 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-10 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-10 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-10 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-11 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-11 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-11 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-11 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-11 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  margin: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .store .box-cake .content-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+.store .box-cake .content-12 .cake-1 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-2 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-3 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-4 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-5 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-6 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-7 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-8 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-9 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-10 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cake-11 {
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.store .box-cake .content-12 img:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+
+.store .box-cake .content-12 .cart-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-3 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-5 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-6 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-7 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-8 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-9 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-10 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-11 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.store .box-cake .content-12 .cart-12 {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,55 +1,88 @@
-// start in navabar 
+// start in navabar
 
 let activeElement = document.querySelectorAll(".nav-element ul li");
 
-activeElement.forEach((element) =>{
-    element.onclick = function(){
-        activeElement.forEach((navelement) =>{
-            navelement.classList.remove("active");//change color in click element nav
-            this.classList.add("active");
-        })
-    }
-})
+activeElement.forEach((element) => {
+  element.onclick = function () {
+    activeElement.forEach((navelement) => {
+      navelement.classList.remove("active"); //change color in click element nav
+      this.classList.add("active");
+    });
+  };
+});
 
-// create images
+// start in back to top
+let btnToTop = document.getElementById("toTop");
+let containrToTop = document.getElementById("backToTop");
 
-function imagescreate(){
-    let arrayImages = [
-        "cake-1.jpeg",
-        "cake-2.jpeg",
-        "cake-3.jpeg",
-        "cupcake-1.jpeg",
-        "cupcake-2.jpeg",
-        "cupcake-3.jpeg",
-        "doughnut-1.jpeg",
-        "doughnut-2.jpeg",
-        "doughnut-3.jpeg",
-        "sweets-1.jpeg",
-        "sweets-2.jpeg",
-        "sweets-3.jpeg"
-    ]
-    for (let i = 0; i < arrayImages.length ; i++) {
-        let contentelementimg = document.createElement("div");
-        let contentImg = document.createElement("div");
-        let images = document.createElement("img");
-        
-        let cartBody = document.createElement("h3");
-        let textCart = document.createTextNode(`cake`);
-        
-        let apperentImages = document.getElementById("box-cake");
-
-        images.src = `images/${arrayImages[i]}`;
-        
-        
-        contentelementimg.className = `content-${i + 1} hello`;
-        contentImg.className = `cake-${i + 1}`;
-        cartBody.className = `cart-${i + 1}`;
-
-        apperentImages.appendChild(contentelementimg);
-        contentelementimg.appendChild(contentImg);
-        contentImg.appendChild(images)
-        contentelementimg.appendChild(cartBody);
-        cartBody.appendChild(textCart);
-    }
+window.onscroll =  function () {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    containrToTop.style.bottom = "5%";
+  }else{
+    containrToTop.style.bottom = "100%";
+  }
+  btnToTop.onclick = ()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 }
-imagescreate()
+// end  in back to top
+  // start in filter element
+  let btnChose = document.querySelectorAll(".buttons-choose button");
+  let imgChose = document.querySelectorAll(".filterImg");
+
+  btnChose.forEach((btn)=>{
+    btn.addEventListener("click" , chooseElement);
+  })
+  function chooseElement() {
+    imgChose.forEach((contentimg)=>{
+      contentimg.style.display = "none";
+    })
+    document.querySelectorAll(this.dataset.cat).forEach((el)=>{
+      el.style.display = "block";
+    })
+  }
+
+
+  // click image and show img in box
+  function SetSrcInImageAndGet() {
+    let FullScreen = document.querySelectorAll(".cakeImg img");
+    let ShowImage = document.getElementById("showImgFullScreen");
+    let setSrcImg = document.getElementById("imgFullScreen");
+    let hide = document.getElementById("close");
+
+    FullScreen.forEach((BoxImg) => {
+      BoxImg.addEventListener("click", () => {
+        let getSrc = BoxImg.getAttribute("src");
+        ShowImage.style.visibility = "visible";
+        setSrcImg.src = `${getSrc}`;
+      });
+    });
+    hide.addEventListener("click", () => {
+      ShowImage.style.visibility = "hidden";
+    });
+  }
+  SetSrcInImageAndGet();
+
+
+// start in cntact change imgaes 2 second
+let contactImg = document.querySelector(".imgcontact img");
+let i = 0;
+
+function changeImgaesContact() {
+  let ArrImgContact = [
+    "../images/undraw_personal_email_re_4lx7.svg",
+    "../images/undraw_profile_data_re_v81r.svg",
+    "../images/undraw_profile_details_re_ch9r.svg"
+  ];
+  setInterval(() => {
+    contactImg.style.opacity = "1";
+    contactImg.src = `${ArrImgContact[i]}`;
+    i++;
+    // contactImg.style.opacity = "0";
+    if (i > ArrImgContact.length) {
+      contactImg.src = `${ArrImgContact[i -= i]}`;   
+    }
+  },1000);
+}
+changeImgaesContact();

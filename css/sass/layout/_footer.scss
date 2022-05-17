@@ -1,0 +1,73 @@
+// start in footer
+footer{
+    background-color: $colorpink;
+    width: 100%;
+    height: 100%;
+      .content-footer{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+      justify-items: center;
+      gap: 20px;
+      padding: $paddingelement;
+      @media (max-width: $minmobile) {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        justify-items: baseline;
+      }
+      // @media (max-width: $minmediumm) {
+      //   grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+      //   justify-items: baseline;
+      // }
+      .informtion-footer{
+        h1{
+          color: $coloryellow;
+        }
+        p{
+          color: $colorgray;
+        }
+      }
+      .list-footer{
+        h1{
+          color: $coloryellow;
+        }
+        ul{
+          list-style: none;
+          li{
+            color: $colorgray;
+            margin-top: $marginelement + 10px;
+            cursor: pointer;
+            position: relative;
+            &::before{
+              content: "";
+              position: absolute;
+              bottom: -3px;
+              left: 0;
+              background-color: $colorgray;
+              width: 0;
+              height: 2px;
+              transition: all .2s linear;
+            }
+            &:hover::before{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .contact-footer{
+        h1{
+          color: $coloryellow;
+        }
+        p{
+          color: $colorgray;
+        }
+      }
+      .about-footer{
+        h1{
+          color: $coloryellow;
+        }
+        p{
+          color: $colorgray;
+        }
+      }
+    }
+  }
+  // end in footer

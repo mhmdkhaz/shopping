@@ -1,247 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <!-- start in style css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- start in webfont -->
-    <link rel="stylesheet" href="css/all.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
     <!-- start in navbar -->
-   <header> 
-    <nav class="container flex-row-spacebetween">
-            <div class="logo">
-                <img src="images/logo.svg" alt="">
-            </div>
-            <div class="nav-element">
-                <ul class="flex-row-center">
-                    <li>home</li>
-                    <li>about</li>
-                    <li>store</li>
-                </ul>
-            </div>
-            <div class="nav-info flex-row-spacearound">
-                <div class="phone-number flex-row-spacebetween">
-                    <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
-                    <p class="mb-0">+ 123 456 789</p>
-                </div>
-                <div class="item flex-row-spacebetween">
-                    <span><i class="fas fa-shopping-cart"></i></span>
-                    <p class="mb-0 text-capitalize"><span id="item-count">2</span> items - $<span class="item-total">21.98</span></p>
-                  </div>
-            </div>
-    </nav>
-
-    <div class="img-header flex-row-center">
-        <div class="text flex-column-center">
-            <h1>welcome <span>Grandma's</span></h1>
-            <button class="btn-black">explore</button>
+    <header>
+      <nav class="container flex-row-spacebetween">
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
         </div>
-    </div>
-</header>
+        <div class="nav-element">
+          <ul class="flex-row-center">
+            <li>home</li>
+            <li>about</li>
+            <li>store</li>
+          </ul>
+        </div>
+        <div class="nav-info flex-row-spacearound">
+          <div class="phone-number flex-row-spacebetween">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0">+ 123 456 789</p>
+          </div>
+          <div class="item flex-row-spacebetween">
+            <span><i class="fas fa-shopping-cart"></i></span>
+            <p class="mb-0 text-capitalize">
+              <span id="item-count">2</span> items - $<span class="item-total"
+                >21.98</span
+              >
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <div class="img-header flex-row-center">
+        <div class="text flex-column-center">
+          <h1>welcome <span>Grandma's</span></h1>
+          <button class="btn-black">explore</button>
+        </div>
+      </div>
+    </header>
     <!-- start in navbar -->
 
     <!-- start in back to the top -->
     <div class="backToTop" id="backToTop">
-        <button id="toTop">top</button>
+      <button id="toTop">top</button>
     </div>
     <!-- end in back to the top -->
+
     <!-- start in  about us  -->
     <section class="about">
-        <div class="container">
-            <div class="content-about">
-                <div class="text-about">
-                    <h1>about <span>us</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!</p>
-                    <button class="btn-black">explore</button>
-                </div>
-                <div class="img-about flex-row-center">
-                    <div class="box"></div>
-                    <img src="images/sweets-1.jpeg" alt="">
-                </div>
-            </div>
+      <div class="container">
+        <div class="content-about">
+          <div class="text-about">
+            <h1>about <span>us</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              aliquam voluptas beatae vitae expedita consectetur nesciunt quia
+              deserunt asperiores facere fuga dicta fugiat corrupti et omnis
+              porro at dolorum! Ad!
+            </p>
+            <button class="btn-black">explore</button>
+          </div>
+          <div class="img-about flex-row-center">
+            <div class="box"></div>
+            <img src="images/cake-1.jpeg" alt="" />
+          </div>
         </div>
+      </div>
     </section>
     <!-- end in  about us  -->
 
     <!-- start in store  -->
     <section class="store">
-        <div class="container">
-            <div class="text-store">
-                <h1 >our <span>store</span></h1>
-            </div>
-            <div class="buttons-choose flex-row-center">
-                <button class="btn-black" data-cat=".all">all</button>
-                <button class="btn-black" data-cat=".cake">cake</button>
-                <button class="btn-black" data-cat=".cupcake">cupcakes</button>
-                <button class="btn-black" data-cat=".sweets">sweets</button>
-                <button class="btn-black" data-cat=".doughunts">doughunts</button>
-            </div>
-            <div class="search flex-row-center">
-                <form>
-                <div class="input">
-                    <span class="icon-search"><i class="fas fa-search"></i></span>
-                    <input type="text" class="form-control" placeholder="item....">
-                </div>
-                </form>
-            </div>
-            <div class="box-cake flex-row-center" id="box-cake">
-                <div class="content-1 filterImg all cake">
-                    <div class=" cake-1 cakeImg">
-                        <img src="images/cake-1.jpeg">
-                    </div>
-                    <h3 class="cart-1">cake</h3>
-                </div>
-                <div class="content-2 filterImg all cake">
-                    <div class=" cake-2 cakeImg">
-                        <img src="images/cake-2.jpeg">
-                    </div>
-                    <h3 class="cart-1">cake</h3>
-                </div>
-                <div class="content-3 filterImg all cake">
-                    <div class=" cake-3 cakeImg">
-                        <img src="images/cake-3.jpeg">
-                    </div>
-                    <h3 class="cart-1">cake</h3>
-                </div>
-                <div class="content-4 filterImg all cupcake">
-                    <div class=" cake-4 cakeImg">
-                        <img src="images/cupcake-1.jpeg">
-                    </div>
-                    <h3 class="cart-1">cupcake</h3>
-                </div>
-                <div class="content-5 filterImg all cupcake">
-                    <div class=" cake-5 cakeImg">
-                        <img src="images/cupcake-2.jpeg">
-                    </div>
-                    <h3 class="cart-1">cupcake</h3>
-                </div>
-                <div class="content-6 filterImg all cupcake">
-                    <div class=" cake-6 cakeImg">
-                        <img src="images/cupcake-3.jpeg">
-                    </div>
-                    <h3 class="cart-1">cupcake</h3>
-                </div>
-                <div class="content-7 filterImg all doughnut">
-                    <div class=" cake-7 cakeImg">
-                        <img src="images/doughnut-1.jpeg">
-                    </div>
-                    <h3 class="cart-1">doughnut</h3>
-                </div>
-                <div class="content-8 filterImg all doughnut">
-                    <div class=" cake-8 cakeImg">
-                        <img src="images/doughnut-2.jpeg">
-                    </div>
-                    <h3 class="cart-1">doughnut</h3>
-                </div>
-                <div class="content-9 filterImg all doughnut">
-                    <div class=" cake-9 cakeImg">
-                        <img src="images/doughnut-3.jpeg">
-                    </div>
-                    <h3 class="cart-1">doughnut</h3>
-                </div>
-                <div class="content-10 filterImg all sweets">
-                    <div class=" cake-10 cakeImg">
-                        <img src="images/sweets-1.jpeg">
-                    </div>
-                    <h3 class="cart-1">sweets</h3>
-                </div>
-                <div class="content-11 filterImg all sweets">
-                    <div class=" cake-11 cakeImg">
-                        <img src="images/sweets-2.jpeg">
-                    </div>
-                    <h3 class="cart-1">sweets</h3>
-                </div>
-                <div class="content-12 filterImg all sweets">
-                    <div class=" cake-12 cakeImg">
-                        <img src="images/sweets-3.jpeg">
-                    </div>
-                    <h3 class="cart-1">sweets</h3>
-                </div>
-              </div>
-              <div class="showImgFullScreen" id="showImgFullScreen">
-                  <span id="close">x</span>
-                <img src="images/cake-1.jpeg" alt="" id="imgFullScreen">
-              </div>
+      <div class="container">
+        <div class="text-store">
+          <h1>our <span>store</span></h1>
         </div>
+        <div class="buttons-choose flex-row-center">
+          <button class="btn-black" data-cat=".all">all</button>
+          <button class="btn-black" data-cat=".cake">cake</button>
+          <button class="btn-black" data-cat=".cupcake">cupcakes</button>
+          <button class="btn-black" data-cat=".sweets">sweets</button>
+          <button class="btn-black" data-cat=".doughunts">doughunts</button>
+        </div>
+        <div class="search flex-row-center">
+          <form>
+            <div class="input">
+              <span class="icon-search"><i class="fas fa-search"></i></span>
+              <input type="text" class="form-control" placeholder="item...." />
+            </div>
+          </form>
+        </div>
+        <div class="box-cake flex-row-center" id="box-cake">
+          <div class="content-1 filterImg all cake">
+            <div class="cake-1 cakeImg">
+              <img src="images/cake-1.jpeg" />
+            </div>
+            <h3 class="cart-1">cake</h3>
+          </div>
+          <div class="content-2 filterImg all cake">
+            <div class="cake-2 cakeImg">
+              <img src="images/cake-2.jpeg" />
+            </div>
+            <h3 class="cart-1">cake</h3>
+          </div>
+          <div class="content-3 filterImg all cake">
+            <div class="cake-3 cakeImg">
+              <img src="images/cake-3.jpeg" />
+            </div>
+            <h3 class="cart-1">cake</h3>
+          </div>
+          <div class="content-4 filterImg all cupcake">
+            <div class="cake-4 cakeImg">
+              <img src="images/cupcake-1.jpeg" />
+            </div>
+            <h3 class="cart-1">cupcake</h3>
+          </div>
+          <div class="content-5 filterImg all cupcake">
+            <div class="cake-5 cakeImg">
+              <img src="images/cupcake-2.jpeg" />
+            </div>
+            <h3 class="cart-1">cupcake</h3>
+          </div>
+          <div class="content-6 filterImg all cupcake">
+            <div class="cake-6 cakeImg">
+              <img src="images/cupcake-3.jpeg" />
+            </div>
+            <h3 class="cart-1">cupcake</h3>
+          </div>
+          <div class="content-7 filterImg all doughnut">
+            <div class="cake-7 cakeImg">
+              <img src="images/doughnut-1.jpeg" />
+            </div>
+            <h3 class="cart-1">doughnut</h3>
+          </div>
+          <div class="content-8 filterImg all doughnut">
+            <div class="cake-8 cakeImg">
+              <img src="images/doughnut-2.jpeg" />
+            </div>
+            <h3 class="cart-1">doughnut</h3>
+          </div>
+          <div class="content-9 filterImg all doughnut">
+            <div class="cake-9 cakeImg">
+              <img src="images/doughnut-3.jpeg" />
+            </div>
+            <h3 class="cart-1">doughnut</h3>
+          </div>
+          <div class="content-10 filterImg all sweets">
+            <div class="cake-10 cakeImg">
+              <img src="images/sweets-1.jpg" />
+            </div>
+            <h3 class="cart-1">sweets</h3>
+          </div>
+          <div class="content-11 filterImg all sweets">
+            <div class="cake-11 cakeImg">
+              <img src="images/sweets-2.jpeg" />
+            </div>
+            <h3 class="cart-1">sweets</h3>
+          </div>
+          <div class="content-12 filterImg all sweets">
+            <div class="cake-12 cakeImg">
+              <img src="images/sweets-3.jpeg" />
+            </div>
+            <h3 class="cart-1">sweets</h3>
+          </div>
+        </div>
+        <div class="showImgFullScreen" id="showImgFullScreen">
+          <span id="close">x</span>
+          <img src="images/cake-1.jpeg" alt="" id="imgFullScreen" />
+        </div>
+      </div>
     </section>
     <!-- end in store -->
 
     <!-- start in contact -->
     <section class="contact">
-        <div class="container">
-            <div class="text-contact">
-                <h1 >cont<span>act</span></h1>
-            </div>
-            <div class="content-contact">
-                <div class="imgcontact flex-column-center">
-                    <img src="images/undraw_profile_details_re_ch9r.svg" alt="">
-                </div>
-                <div class="formcontact flex-column-spacearound">
-                    <form>
-                        <div class="">
-                            <label for="">name</label>
-                            <input type="text" placeholder="enter name">
-                        </div>
-                        <div class="">
-                            <label for="">email</label>
-                            <input type="email" placeholder="enter email">
-                        </div>
-                        <div class="">
-                            <label for="">password</label>
-                            <input type="password" placeholder="enter password">
-                        </div>
-                        <div class="">
-                            <label for="">confirm password</label>
-                            <input type="passoword"  placeholder="enter password">
-                        </div>
-                        <div class="button flex-row-center">
-                            <button class="btn-black">send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-contact">
+          <h1>cont<span>act</span></h1>
         </div>
+        <div class="content-contact">
+          <div class="imgcontact flex-column-center">
+            <img src="images/undraw_profile_details_re_ch9r.svg" alt="" />
+          </div>
+          <div class="formcontact flex-column-spacearound">
+            <form>
+              <div class="">
+                <label for="">name</label>
+                <input type="text" placeholder="enter name" />
+              </div>
+              <div class="">
+                <label for="">email</label>
+                <input type="email" placeholder="enter email" />
+              </div>
+              <div class="">
+                <label for="">password</label>
+                <input type="password" placeholder="enter password" />
+              </div>
+              <div class="">
+                <label for="">confirm password</label>
+                <input type="passoword" placeholder="enter password" />
+              </div>
+              <div class="button flex-row-center">
+                <button class="btn-black">send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end in contact -->
 
     <!-- start in footer -->
     <footer>
-        <div class="container">
-            <div class="content-footer">
-                <div class="informtion-footer">
-                    <h1 >foo<span>ter</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam officia harum consectetur ut, minus voluptas similique a aperiam quas illo non nisi repellendus? Ad neque atque iusto illo molestias aliquid.</p>
-                </div>
-                <div class="list-footer">
-                    <h1>list</h1>
-                    <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>store</li>
-                    </ul>
-                </div>
-                <div class="contact-footer">
-                    <h1>contact us</h1>
-                    <p>
-                        Rio de Janeiro - RJ, 22795-008, Brazil 010-020-0340 info@company.co
-                    </p>
-                </div>
-                <div class="about-footer">
-                    <h1>About our Grandma's</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-                    </p>
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="content-footer">
+          <div class="informtion-footer">
+            <h1>foo<span>ter</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              officia harum consectetur ut, minus voluptas similique a aperiam
+              quas illo non nisi repellendus? Ad neque atque iusto illo
+              molestias aliquid.
+            </p>
+          </div>
+          <div class="list-footer">
+            <h1>list</h1>
+            <ul>
+              <li>home</li>
+              <li>about</li>
+              <li>store</li>
+            </ul>
+          </div>
+          <div class="contact-footer">
+            <h1>contact us</h1>
+            <p>
+              Rio de Janeiro - RJ, 22795-008, Brazil 010-020-0340
+              info@company.co
+            </p>
+          </div>
+          <div class="about-footer">
+            <h1>About our Grandma's</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- end in footer -->
     <script src="js/text.js"></script>
-</body>
+  </body>
 </html>
